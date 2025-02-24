@@ -8,12 +8,16 @@
     require_once "Balconista.php";
     require_once "Vendedor.php";
     require_once "Veterinario.php";
+    require_once "Venda.php";
 
     $cachorro = new Cachorro('Rex', 'caramelo', 4, 'caramelo', '15', 'medio');
     $cachorro->Falar();
 
     $humano1 = new Humano('Thiago', 25, 'Rua 4', '12345678', $cachorro->nome);
     $humano1->Identificacao();
+
+    $medicacao1 = new Venda('Artrin', 100, 3);
+    $medicacao1->Venda();
 
     echo "-------------------------------------------" . PHP_EOL;
 
@@ -25,7 +29,7 @@
 
     echo "-------------------------------------------" . PHP_EOL;
 
-    $passaro = new Passaro('asd', 'calopsita', 2, 'amarelo', '0,6', 'pequeno');
+    $passaro = new Passaro('passarinho', 'calopsita', 2, 'amarelo', '0,6', 'pequeno');
     $passaro->Falar();
 
     $humano3 = new Humano('Ana', 22, 'Rua 6', '12345678', $passaro->nome);

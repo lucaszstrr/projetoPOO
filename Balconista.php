@@ -7,12 +7,11 @@
         public $salario;
         public $cargo;
 
-        public function __construct($nomeHumano, $idade, $endereco, $contato, $cargo){
+        public function __construct($nomeHumano, $idade, $endereco, $contato){
             $this->nomeHumano = $nomeHumano;
             $this->idade = $idade;
             $this->endereco = $endereco;
             $this->contato = $contato;
-            $this->cargo = $cargo;
         }
 
         public function CalculaSalario(){

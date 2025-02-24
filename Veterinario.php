@@ -8,12 +8,11 @@
         public $cargo;
         public $animaisDoMes;
 
-        public function __construct($nomeHumano, $idade, $endereco, $contato, $cargo, $animaisDoMes){
+        public function __construct($nomeHumano, $idade, $endereco, $contato, $animaisDoMes){
             $this->nomeHumano = $nomeHumano;
             $this->idade = $idade;
             $this->endereco = $endereco;
             $this->contato = $contato;
-            $this->cargo = $cargo;
             $this->animaisDoMes = $animaisDoMes;
         }
 

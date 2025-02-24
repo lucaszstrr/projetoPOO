@@ -12,17 +12,32 @@
     $cachorro = new Cachorro('Rex', 'caramelo', 4, 'caramelo', '15', 'medio');
     $cachorro->Falar();
 
-    $gato = new Gato('Gato', 'persa', 4, 'branco', '7', 'medio-pequeno');
+    $humano1 = new Humano('Thiago', 25, 'Rua 4', '12345678', $cachorro->nome);
+    $humano1->Identificacao();
+
+    echo "-------------------------------------------" . PHP_EOL;
+
+    $gato = new Gato('Max', 'persa', 4, 'branco', '7', 'medio-pequeno');
     $gato->Falar();
+
+    $humano2 = new Humano('Sergio', 23, 'Rua 4', '12345678', $gato->nome);
+    $humano2->Identificacao();
+
+    echo "-------------------------------------------" . PHP_EOL;
 
     $passaro = new Passaro('asd', 'calopsita', 2, 'amarelo', '0,6', 'pequeno');
     $passaro->Falar();
 
-    $balconista = new Balconista('fulano', 20, 'Rua 1', '40028922', 'balconista');
+    $humano3 = new Humano('Ana', 22, 'Rua 6', '12345678', $passaro->nome);
+    $humano3->Identificacao();
+
+    echo "-------------------------------------------" . PHP_EOL;
+
+    $balconista = new Balconista('Fulano', 20, 'Rua 1', '40028922');
     $balconista->CalculaSalario();
 
-    $vendedor = new Vendedor('carlos', 23, 'Rua 2', '123456', 'vendedor', 40);
+    $vendedor = new Vendedor('Carlos', 23, 'Rua 2', '123456', 40);
     $vendedor->CalculaSalario();
 
-    $veterinario = new Veterinario('sergio', 40, 'Rua 3', '123456', 'veterinario', 25);
+    $veterinario = new Veterinario('Sergio', 40, 'Rua 3', '123456', 25);
     $veterinario->CalculaSalario();

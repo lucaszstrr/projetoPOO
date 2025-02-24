@@ -15,8 +15,7 @@
         function __construct($nome, $tipo, $raca){
             $this->nome = $nome;
             $this->tipo = $tipo;
-            $this->raca = $raca;
-            
+            $this->raca = $raca;          
         }
 
         public function Falar(){

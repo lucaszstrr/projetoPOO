@@ -64,3 +64,4 @@
     $veterinario = new Veterinario('Sergio', 40, 'Rua 3', '123456', 25);
     $veterinario->CalculaSalario();
     
+    

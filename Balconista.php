@@ -16,7 +16,7 @@
 
         public function CalculaSalario(){
             
-            echo "O salário do balconista " . $this->nomeHumano . " é R$1518" . PHP_EOL;
+            echo "O salário do balconista " . $this->nomeHumano . " é R$1500" . PHP_EOL;
 
         }
 
